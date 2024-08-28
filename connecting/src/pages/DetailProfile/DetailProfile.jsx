@@ -11,8 +11,11 @@ import {
 } from '../../assets/DetailProfile'
 import { MessageIcon } from '../../assets/HeaderBar'
 import { Link } from 'react-router-dom'
+import { GoodWhite } from '../../assets/MemberList'
 
 export default function DetailProfile() {
+  const [click, setClick] = React.useState(false)
+
   return (
     <DetailProfileContainer>
       <ProfileHeader>
@@ -51,13 +54,24 @@ export default function DetailProfile() {
       </ProfileContentWrapper>
 
       <BtnWrapper>
-        <BtnElemWrapper>
+        <BtnElemWrapper style={{ cursor: 'pointer' }}>
           <MessageIcon />
           <div>쪽지하기</div>
         </BtnElemWrapper>
-        <BtnElemWrapper>
-          <GoodBtnIcon />
-          <div>좋아요</div>
+        <BtnElemWrapper
+          onClick={() => setClick(!click)}
+          style={{ background: click ? '#F16169' : 'white', cursor: 'pointer' }}
+        >
+          {click == false ? (
+            <>
+              <GoodBtnIcon />
+              <div>좋아요</div>
+            </>
+          ) : (
+            <>
+              <GoodWhite />
+            </>
+          )}
         </BtnElemWrapper>
       </BtnWrapper>
     </DetailProfileContainer>
