@@ -35,11 +35,15 @@ export const HeaderTitle = styled.div`
   color: #454545;
 `;
 export const SubHeaderTitle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
+  margin-top: 19px;
 
   color: #454545;
 `;
@@ -125,6 +129,10 @@ export const SubmitBtn = styled.button`
 
   color: #ffffff;
 
-  position: relative;
+  /* position: relative; */
   margin-top: auto;
+`;
+export const Textarea = styled.textarea`
+  border: none;
+  height: 20vh;
 `;

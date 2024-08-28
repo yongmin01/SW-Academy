@@ -1,27 +1,26 @@
 import styled from "styled-components";
-import background from "../../assets/background.svg";
 import logo from "../../assets/logo.svg";
 
-export const Container = styled.div`
+export const Page = styled.div`
   width: 100%;
   height: 100vh;
-  background-image: url(${background});
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 27px 30px 30px;
+
+  background: linear-gradient(to right, #f9a89d, #f16169);
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 27px 30px 30px;
 `;
 export const HeaderCenter = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1px;
+  flex: 1;
 
   align-items: center;
 `;
@@ -32,7 +31,7 @@ export const HeaderTitle = styled.div`
   font-size: 18px;
   line-height: 24px;
 
-  color: #454545;
+  color: #ffffff;
 `;
 export const SubHeaderTitle = styled.div`
   font-family: "Pretendard";
@@ -41,20 +40,45 @@ export const SubHeaderTitle = styled.div`
   font-size: 12px;
   line-height: 24px;
 
-  color: #454545;
+  color: #ffffff;
 `;
 export const Icon = styled.img`
   width: ${(props) => props.width};
   height: 35px;
 `;
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+`;
+export const FormTitle = styled.div`
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* padding: 0 26px; */
+  color: #454545;
+`;
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin-top: 16px;
 
+  padding: 0 26px;
   overflow-y: scroll;
 `;
 export const InputContainer = styled.div`
+  height: 60px;
   display: flex;
   flex-direction: column;
   padding: 8px 15px;
@@ -127,4 +151,45 @@ export const SubmitBtn = styled.button`
 
   position: relative;
   margin-top: auto;
+`;
+export const BtnContainer = styled.div`
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+  padding-bottom: 30px;
+`;
+export const LabelAddBtn = styled.div`
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+
+  box-sizing: border-box;
+
+  &.borderBtn {
+    border: 2px solid #f16169;
+    border-radius: 25px;
+
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #f16169;
+  }
+  &.noneBorderBtn {
+    background: #f16169;
+    border: 2px solid #f16169;
+    border-radius: 25px;
+
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
 `;
