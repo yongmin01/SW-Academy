@@ -1,0 +1,7 @@
+export { ReactComponent as StarActive } from './ic_star_active.svg'
+export { ReactComponent as StarInactive } from './ic_star_inactive.svg'
+export { ReactComponent as ListActive } from './ic_list_active.svg'
+export { ReactComponent as ListInactive } from './ic_list_inactive.svg'
+export { ReactComponent as ClickIcon } from './ic_click.svg'
+export { ReactComponent as NextIcon } from './ic_next.svg'
+export { ReactComponent as EmojiImg } from './img_emoji.svg'
