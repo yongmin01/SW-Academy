@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #F8F8F8;
+    background-color: #ffffff;
     border-color: black;
     align-items: center;
   }
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     border-color: black;
     align-items: center;
   }
