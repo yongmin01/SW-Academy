@@ -30,6 +30,10 @@ export const TagElem = styled.div`
   text-overflow: ellipsis;
   font-weight: 600;
   margin-bottom: 3px;
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const FullListContainer = styled.div`
@@ -69,12 +73,24 @@ export const FullListElemContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #fde9e7;
+  }
 `
 
 export const UserIconName = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 7px;
+
+  svg {
+    cursor: pointer;
+  }
 `
 
 export const UserName = styled.div`

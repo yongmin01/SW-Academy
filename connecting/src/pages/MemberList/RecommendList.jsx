@@ -16,6 +16,7 @@ import {
   DescriptionContainer,
   RecommendListContainer,
 } from './RecommendList.style'
+import { Link } from 'react-router-dom'
 
 export default function RecommendList() {
   return (
@@ -26,21 +27,23 @@ export default function RecommendList() {
       </DescriptionContainer>
 
       <ProfileClickContainer>
-        <Circle1 />
-        <Circle2 />
-        <Circle3 />
+        <Link to="/detailprofile">
+          <Circle1 />
+          <Circle2 />
+          <Circle3 />
 
-        <ClickIconContainer />
-        <ClickTitle>프로필 확인</ClickTitle>
+          <ClickIconContainer />
+          <ClickTitle>프로필 확인</ClickTitle>
 
-        <Tag1># ISTJ</Tag1>
-        <Tag2># ios 개발</Tag2>
-        <Tag3># 디자이너</Tag3>
+          <Tag1># ISTJ</Tag1>
+          <Tag2># ios 개발</Tag2>
+          <Tag3># 디자이너</Tag3>
 
-        <ProfileInfoContainer>
-          <EmojiImg />
-          <div>이조은</div>
-        </ProfileInfoContainer>
+          <ProfileInfoContainer>
+            <EmojiImg />
+            <div>이조은</div>
+          </ProfileInfoContainer>
+        </Link>
       </ProfileClickContainer>
 
       <NextClickBtn>

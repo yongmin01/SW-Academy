@@ -1,0 +1,7 @@
+export { ReactComponent as LeftIcon } from './ic_left.svg'
+export { ReactComponent as UserIcon } from './ic_user.svg'
+export { ReactComponent as LinkIcon } from './ic_link.svg'
+export { ReactComponent as PencilIcon } from './ic_pencil.svg'
+export { ReactComponent as HashtagIcon } from './ic_hashtag.svg'
+export { ReactComponent as MessageBtnIcon } from './ic_message_btn.svg'
+export { ReactComponent as GoodBtnIcon } from './ic_good_btn.svg'
