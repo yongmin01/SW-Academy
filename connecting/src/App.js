@@ -6,6 +6,7 @@ import EnterMyInfoPage from "./pages/EnterMyInfo/EnterMyInfoPage";
 import Memberlist from "./pages/MemberList/MemberList";
 import CreateNetworkPage from "./pages/CreateNetwork/CreateNetworkPage";
 import CreateFormatPage from "./pages/CreateFormat/CreateFormatPage";
+import FormCreateSuccess from "./pages/FormCreateSuccess/FormCreateSuccess";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/memberlist" element={<Memberlist />} />
           <Route path="/createNetwork" element={<CreateNetworkPage />} />
           <Route path="/createFormat" element={<CreateFormatPage />} />
+          <Route path="/createFormSuccess" element={<FormCreateSuccess />} />
         </Routes>
       </BrowserRouter>
     </div>

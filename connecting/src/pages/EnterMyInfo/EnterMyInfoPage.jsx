@@ -61,7 +61,9 @@ export default function EnterMyInfoPage() {
           <S.Input placeholder="관심사를 입력해주세요 (ex) #애니 #농구" />
         </S.InputContainer>
       </S.Form>
-      <S.SubmitBtn>네트워킹 참가하기</S.SubmitBtn>
+      <S.SubmitBtn onClick={() => navigator("/memberlist")}>
+        네트워킹 참가하기
+      </S.SubmitBtn>
     </S.Container>
   );
 }

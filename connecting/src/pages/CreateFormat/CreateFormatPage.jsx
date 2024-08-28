@@ -10,6 +10,8 @@ import logo from "../../assets/logo.svg";
 export default function CreateFormatPage() {
   const inputRef = useRef();
   const navigator = useNavigate();
+  const [name, setName] = useState("");
+  const [interests, setInterests] = useState("");
   const [imagePreviewUrl, setImagePreviewUrl] = useState(logo); // 초기 상태로 로고 이미지를 사용
   const [imageFileName, setImageFileName] =
     useState("대표 이미지를 첨부해주세요");
@@ -25,6 +27,7 @@ export default function CreateFormatPage() {
       reader.readAsDataURL(file);
     }
   };
+
   return (
     <S.Page>
       <S.Header>
@@ -41,7 +44,11 @@ export default function CreateFormatPage() {
           <S.FormTitle>참여자 정보 입력 예시</S.FormTitle>
           <S.InputContainer>
             <S.Label>이름</S.Label>
-            <S.Input placeholder="이름을 입력해주세요" />
+            <S.Input
+              placeholder="이름을 입력해주세요"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </S.InputContainer>
           <S.ImageInputContainer>
             <S.ImagePreview
@@ -58,13 +65,24 @@ export default function CreateFormatPage() {
               <S.ImageInputBtn>{imageFileName}</S.ImageInputBtn>
             </S.InputContainer>
           </S.ImageInputContainer>
+          <S.InputContainer>
+            <S.Label>관심 분야</S.Label>
+            <S.Input
+              placeholder="관심분야를 적어주세요"
+              value={interests}
+              onChange={(e) => setInterests(e.target.value)}
+            />
+          </S.InputContainer>
         </S.Form>
         <S.BtnContainer>
           <S.LabelAddBtn className="borderBtn">
             <S.Icon src={plusIcon} width="20px" />
             정보 추가
           </S.LabelAddBtn>
-          <S.LabelAddBtn className="noneBorderBtn">
+          <S.LabelAddBtn
+            className="noneBorderBtn"
+            onClick={() => navigator("/createFormSuccess")}
+          >
             <S.Icon src={checkIcon} width="22px" />
             완료하기
           </S.LabelAddBtn>
