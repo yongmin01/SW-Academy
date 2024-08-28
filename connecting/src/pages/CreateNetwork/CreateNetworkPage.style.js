@@ -87,7 +87,8 @@ export const ImageInputBtn = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 16px;
+  object-fit: cover;
 
   color: #454545;
 `;
@@ -95,8 +96,8 @@ export const Label = styled.div`
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 10px;
+  line-height: 16px;
 
   color: #454545;
 `;
