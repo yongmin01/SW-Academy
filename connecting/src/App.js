@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 import JoinNetworkingPage from "./pages/JoinNetworking/JoinNetworkingPage";
 import EnterInviteCodePage from "./pages/EnterInviteCode/EnterInviteCodePage";
@@ -7,6 +8,9 @@ import Memberlist from "./pages/MemberList/MemberList";
 import CreateNetworkPage from "./pages/CreateNetwork/CreateNetworkPage";
 import CreateFormatPage from "./pages/CreateFormat/CreateFormatPage";
 import FormCreateSuccess from "./pages/FormCreateSuccess/FormCreateSuccess";
+
+import DetailProfile from './pages/DetailProfile/DetailProfile'
+
 
 function App() {
   return (
@@ -20,10 +24,12 @@ function App() {
           <Route path="/createNetwork" element={<CreateNetworkPage />} />
           <Route path="/createFormat" element={<CreateFormatPage />} />
           <Route path="/createFormSuccess" element={<FormCreateSuccess />} />
+          <Route path="/detailProfile" element={<DetailProfile />} />
+
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

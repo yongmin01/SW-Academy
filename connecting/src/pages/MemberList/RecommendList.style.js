@@ -157,4 +157,13 @@ export const NextClickBtn = styled.div`
   margin-bottom: 4em;
 
   box-shadow: 0px 0px 2px 2px rgba(212, 115, 124, 0.25);
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to top right, #f16169, #f9a89d);
+  }
+
+  &:active {
+    background: linear-gradient(to top right, #f16169, #f16169);
+  }
 `
