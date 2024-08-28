@@ -20,7 +20,7 @@ export default function JoinNetworkingPage() {
         <S.Comment>어서 네트워킹에 참여해 보세요!</S.Comment>
       </S.Greetings>
       <S.NetworkContainer>
-        <S.MakeNetwork>
+        <S.MakeNetwork onClick={() => navigator("/createNetwork")}>
           <S.PlusIcon src={plusIcon} />
           <div>새로운 네트워크 형성하기</div>
         </S.MakeNetwork>
