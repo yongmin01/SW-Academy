@@ -4,9 +4,12 @@ export const HeaderBarContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 2em;
+  padding: 2em 1em;
   padding-bottom: 0;
   align-items: center;
+
+  cursor: pointer;
+  height: 5em;
 `
 
 export const NetworkListBtn = styled.div`
@@ -26,7 +29,7 @@ export const NetworkListBtn = styled.div`
 
   div {
     margin-top: 0.2em;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: 500;
   }
 `

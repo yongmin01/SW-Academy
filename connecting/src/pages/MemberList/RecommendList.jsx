@@ -20,7 +20,6 @@ import {
 export default function RecommendList() {
   return (
     <RecommendListContainer>
-      <div style={{ flex: 1 }}></div>
       <DescriptionContainer>
         <div>네트워킹 장에 오신 걸 환영합니다!</div>
         <div>윤빈님에게 추천하는 참여자를 찾아봤어요</div>

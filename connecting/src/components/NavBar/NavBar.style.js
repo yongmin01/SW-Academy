@@ -8,6 +8,7 @@ export const NavBarContainer = styled.div`
   align-items: center;
   background: #f7f1e9;
   border-top: 1px solid #efe4d7;
+  height: 4em;
 `
 
 export const NavElemContainer = styled.div`
