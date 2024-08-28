@@ -14,8 +14,15 @@ export default function MemberListContent() {
   const [listType, setListType] = React.useState('recommend')
 
   return (
-    <MemberListContainer>
-      <div style={{ flex: 1, width: '100%' }}>
+    <MemberListContainer style={{ height: 'calc(100vh - 9.1em)' }}>
+      <div
+        style={{
+          flex: '1 1 0%',
+          width: '100%',
+          height: 'calc(-10em + 100vh)',
+          overflow: 'auto',
+        }}
+      >
         {listType == 'recommend' ? <RecommendList /> : <FullList />}
       </div>
       <ListTypeBtnContainer>

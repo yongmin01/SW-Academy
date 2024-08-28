@@ -7,6 +7,7 @@ export const RecommendListContainer = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+  place-content: center;
 `
 
 export const DescriptionContainer = styled.div`
@@ -32,6 +33,7 @@ export const ProfileClickContainer = styled.div`
   aspect-ratio: 1;
   margin: 0px auto;
   margin-top: 2em;
+  cursor: pointer;
 `
 
 export const Circle1 = styled.div`
@@ -78,14 +80,15 @@ export const ClickIconContainer = styled.div`
 
 export const TagContainer = styled.div`
   position: absolute; /* 절대 위치 지정 */
-  padding: 8px 12px 4px 12px; /* 태그 패딩 */
-  border-radius: 12px; /* 원형으로 만들기 */
+  padding: 6px 8px 3px 8px; /* 태그 패딩 */
+  border-radius: 8px; /* 원형으로 만들기 */
   width: fit-content; /* 세 번째 원의 너비 */
   height: fit-content; /* 세 번째 원의 높이 */
   background: #fff;
   color: #4c4c4c;
   font-weight: 600;
   border: 1px solid #d4b594;
+  font-size: 0.7em;
 `
 
 export const Tag1 = styled(TagContainer)`
